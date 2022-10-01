@@ -1,26 +1,17 @@
-const add = function() {
-	
-};
+// The goal for this exercise is to create a calculator that does the following:
+// add, subtract, get the sum, multiply, get the power, and find the factorial
 
-const subtract = function() {
-	
-};
+const add = function () {};
 
-const sum = function() {
-	
-};
+const subtract = function () {};
 
-const multiply = function() {
+const sum = function () {};
 
-};
+const multiply = function () {};
 
-const power = function() {
-	
-};
+const power = function () {};
 
-const factorial = function() {
-	
-};
+const factorial = function () {};
 
 // Do not edit below this line
 module.exports = {
@@ -29,5 +20,5 @@ module.exports = {
   sum,
   multiply,
   power,
-  factorial
+  factorial,
 };
