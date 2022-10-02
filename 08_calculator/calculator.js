@@ -25,9 +25,17 @@ const multiply = function (array) {
   return sum;
 };
 
-const power = function () {};
+const power = function (x, y) {
+  return x ** y;
+};
 
-const factorial = function () {};
+const factorial = function (x) {
+  let sum = 1;
+  for (let i = 0; i < x; i++) {
+    if (i !== 0) sum *= i + 1;
+  }
+  return sum;
+};
 
 // Do not edit below this line
 module.exports = {
