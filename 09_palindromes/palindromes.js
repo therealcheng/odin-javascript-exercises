@@ -1,5 +1,5 @@
 const palindromes = function (word) {
-  const formatWord = word.replace('!', '');
+  const formatWord = word.replace('!', '').toLowerCase();
   // separate word into split array, reverse array, join array
   const reverseWord = formatWord.toLowerCase().split('').reverse().join('');
   if (formatWord === reverseWord) return true;
