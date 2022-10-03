@@ -4,6 +4,7 @@ const fibonacci = function (sequence) {
   previous = 1;
   previous2 = 0;
   if (sequence < 0) return 'OOPS';
+  else if (sequence === Math.abs(sequence) * -1) return 'OOPS';
   else {
     while (n < sequence) {
       current = previous + previous2;
