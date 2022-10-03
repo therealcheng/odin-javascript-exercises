@@ -6,10 +6,16 @@ const findTheOldest = function (people) {
 
   // return name that is older
   people.forEach((person) => {
-    yearsLived = person.yearOfDeath - person.yearOfBirth;
-    person.yearsLived = yearsLived;
-    if (person.hasOwnProperty('yearOfDeath')) arrayN++;
-    else if (yearsLived > oldestNumber) {
+    // finding age
+    if (person.hasOwnProperty('yearOfDeath')) {
+      yearsLived = person.yearOfDeath - person.yearOfBirth;
+      person.yearsLived = yearsLived;
+    } else {
+      yearsLived = 2022 - person.yearOfBirth;
+      person.yearsLived = yearsLived;
+    }
+    // checking for greater age
+    if (yearsLived > oldestNumber) {
       oldestNumber = yearsLived;
       oldestName = person.name;
       arrayN++;
