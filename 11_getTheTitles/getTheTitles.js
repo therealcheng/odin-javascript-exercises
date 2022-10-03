@@ -6,8 +6,8 @@ const getTheTitles = function (books) {
 
     bookArray.push(current);
   }
-  console.log(current);
-  console.log(bookArray);
+  //   console.log(current);
+  //   console.log(bookArray);
   return bookArray;
 };
 
