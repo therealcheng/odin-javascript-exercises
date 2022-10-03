@@ -1,11 +1,21 @@
 const fibonacci = function (sequence) {
-  let firstSequence = 1;
-  let previousSequence = 1;
-  if (sequence === String) return sequence;
+  let n = 0,
+    current = 0;
+  previous = 1;
+  previous2 = 0;
+  if (sequence < 0) return 'OOPS';
   else {
-    for (let i = 0; i < sequence.length; i++) {}
+    while (n < sequence) {
+      current = previous + previous2;
+      previous2 = previous;
+      previous = current;
+
+      n++;
+    }
+    return previous2;
   }
 };
+console.log(fibonacci('25'));
 
 // Do not edit below this line
 module.exports = fibonacci;
